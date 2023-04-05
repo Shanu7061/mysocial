@@ -6,11 +6,20 @@
     },
     "extends": [
       "plugin:react/recommended",
+      "plugin:import/recommended",
       "standard-with-typescript",
       "plugin:react-hooks/recommended",
       "react-app",
       "prettier"
     ],
+    "settings": {
+      "import/resolver": {
+        "node": {          
+          "paths": ["src"],
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    },
     "overrides": [
     ],
     "parserOptions": {
