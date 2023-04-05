@@ -1,9 +1,16 @@
+@import "../../style.scss";
+
 .home{
-    display: flex;
-    // margin: auto;
-    overflow-y: auto;
-    justify-content: center;
-    // width:60%;
-    height:200vh;
-    background-color: red;
-}
+  @include themify($themes) {
+    padding: 20px 70px;
+    background-color: themed("bgSoft");
+
+    @include mobile {
+      padding: 10px;
+    }
+
+    @include tablet{
+      padding: 20px;
+    }
+  }
+ }

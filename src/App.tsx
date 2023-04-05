@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./style.scss";
 import { Routes, Route } from "react-router-dom";
 
 import Login from "./pages/login/Login";
@@ -9,7 +9,7 @@ import Profile from "./pages/profile/Profile";
 
 function App() {
   return (
-    <div className='App'>
+    <div>
       <Routes>
         <Route element={<RouteWrapper />}>
           <Route path='/' element={<Home />} />

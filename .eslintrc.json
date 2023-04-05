@@ -6,6 +6,7 @@
     },
     "extends": [
       "plugin:react/recommended",
+      "plugin:import/recommended",
       "standard-with-typescript",
       "plugin:react-hooks/recommended",
       "react-app",
